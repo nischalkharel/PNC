@@ -42,11 +42,29 @@
                     <button>Calculate</button>
                 </div>
             </form>
+            
         </div>
+
         <div class="results">
-            <h3 id="message"></h3>
-            <canvas id="data-set"></canvas>
+            <h3 id = "message"></h3>
+            <canvas id="data-set" width="400" height="300"></canvas>
         </div>
+        <div class="table-container">
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Starting Balance</th>
+                        <th>Ending Balance</th>
+                        <th>Earned</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                    <!-- Results will be added dynamically using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
     </section>
     <script src="js/app.js"></script>
 </body>

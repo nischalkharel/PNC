@@ -37,6 +37,28 @@ function calculateGrowth(e) {
         }
         // 
         message.innerText = `You will have this amount ${growth} after ${period} years`;
+        // Clear existing table rows
+        resultTableBody.innerHTML = "";
+
+        // Populate the table with calculated values
+        for (let i = 0; i < period; i++) {
+            const startingBalance = i === 0 ? initial : data[i - 1];
+            const endingBalance = data[i];
+            const earned = endingBalance - startingBalance;
+
+            // Create a new table row
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${i + 1}</td>
+                <td>${toDecimal(startingBalance, 2)}</td>
+                <td>${toDecimal(endingBalance, 2)}</td>
+                <td>${toDecimal(earned, 2)}</td>
+            `;
+
+            // Append the row to the table
+            resultTableBody.appendChild(row);
+        }
+        
         drawGraph();
     } catch (error) {
         console.error(error);

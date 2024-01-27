@@ -9,6 +9,8 @@
 
 body{
     background-color: #484848;
+    display: flex;
+    flex-direction: row;
 }
 .container {
     display: flex;
@@ -20,7 +22,8 @@ body{
 .calculator {
     width: 40%;
     color: #ffffff;
-  
+    display: flex;
+    flex-direction: column;
 }
 
 .heading h3 {
@@ -61,11 +64,31 @@ body{
     box-shadow: 0px 0px 10px 2px #f38d34f4;
     width: 50%;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+    flex-direction: row;
+    align-items: right;
     font-size: 20px;
 }
 
+
+.table-container {
+    align-items: left;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding: 10;
+}
+
+#resultTable {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#resultTable, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
