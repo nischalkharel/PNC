@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #484848;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -16,11 +19,12 @@
 
 .calculator {
     width: 40%;
-    color: #484848;
+    color: #ffffff;
 }
 
 .heading h3 {
     font-size: 25px;
+    padding: 50;
     color: #f7841f;
 }
 
@@ -40,6 +44,7 @@
     border: 2px solid #0069aa;
     outline: none;
     border-radius: 5px;
+    font-size: 15px;
 }
 .input-group button {
     background-color: #f7841f;
@@ -47,6 +52,10 @@
 }
 
 .results {
-    box-shadow: 0px 0px 10px 3px #f38d34f4;
+    box-shadow: 0px 0px 10px 2px #f38d34f4;
     width: 50%;
+}
+
+.headers {
+    padding-bottom: 500;
 }
