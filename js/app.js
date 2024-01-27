@@ -35,8 +35,6 @@ function calculateGrowth(e) {
             labels.push("Year " + i);
             growth = toDecimal(final, 2);
         }
-        // 
-        message.innerText = `You will have this amount ${growth} after ${period} years`;
         // Clear existing table rows
         resultTableBody.innerHTML = "";
 
