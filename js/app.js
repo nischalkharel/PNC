@@ -46,7 +46,34 @@ function drawGraph() {
                 backgroundColor: ["#f7841f"],
                 borderWidth: 3
             }]
+        },
+        options: {
+            scales: {
+                x: {
+                    ticks: {
+                        color: "#ffffff" // Set the label color to white
+                    },
+                    grid: {
+                        color: "#333333" // Set the x-axis grid color
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: "#ffffff" // Set the label color to white
+                    },
+                    grid: {
+                        color: "#333333" // Set the y-axis grid color
+                    }
+                }
+            },
+            legend: {
+                title: {
+                    color: "#ffffff" // Set the legend label color to white
+                }
+            }
         }
+            
+        
     });
 }
 
