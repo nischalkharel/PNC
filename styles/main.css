@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Azeret Mono");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+}
+
+.calculator {
+    width: 40%;
+    color: #484848;
+}
+
+.heading h3 {
+    font-size: 25px;
+    color: #f7841f;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input,
+.input-group button,
+.input-group select {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #0069aa;
+    outline: none;
+    border-radius: 5px;
+}
+.input-group button {
+    background-color: #f7841f;
+    color: #ffffff;
+}
+
+.results {
+    box-shadow: 0px 0px 10px 3px #f38d34f4;
+    width: 50%;
+}
