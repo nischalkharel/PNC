@@ -24,7 +24,8 @@ body{
 
 .heading h3 {
     font-size: 25px;
-    padding: 50;
+    padding-top: 10;
+    padding-bottom: 5;
     color: #f7841f;
 }
 
@@ -56,6 +57,3 @@ body{
     width: 50%;
 }
 
-.headers {
-    padding-bottom: 500;
-}
