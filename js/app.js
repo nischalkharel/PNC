@@ -48,9 +48,9 @@ function calculateGrowth(e) {
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>${i + 1}</td>
-                <td>${toDecimal(startingBalance, 2)}</td>
-                <td>${toDecimal(endingBalance, 2)}</td>
-                <td>${toDecimal(earned, 2)}</td>
+                <td>$${toDecimal(startingBalance, 2)}</td>
+                <td>$${toDecimal(endingBalance, 2)}</td>
+                <td>$${toDecimal(earned, 2)}</td>
             `;
 
             // Append the row to the table
@@ -74,7 +74,7 @@ function drawGraph() {
                 data,
                 fill: true,
                 backgroundColor: ["#f7841f"],
-                borderWidth: 3
+                borderWidth: 1
             }]
         },
         options: {
@@ -84,7 +84,8 @@ function drawGraph() {
                         color: "#ffffff" // Set the label color to white
                     },
                     grid: {
-                        color: "#333333" // Set the x-axis grid color
+                        color: "#000000", // Set the x-axis grid color
+                        borderWidth: 1
                     }
                 },
                 y: {
@@ -92,7 +93,8 @@ function drawGraph() {
                         color: "#ffffff" // Set the label color to white
                     },
                     grid: {
-                        color: "#333333" // Set the y-axis grid color
+                        color: "#000000", // Set the y-axis grid color
+                        borderWidth: 1
                     }
                 }
             },
